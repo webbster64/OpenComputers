@@ -1,0 +1,5 @@
+monitor = peripheral.wrap("top")
+monitor. clear()
+monitor.setcursorpos(1,1)
+monitor.settextscale(5)
+monitor.write("Welcome to SpecterCraft!")
