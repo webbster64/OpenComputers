@@ -43,17 +43,30 @@ drone.setStatusText("Checks")
 os.sleep(15:1)
 --movement
 drone.move(0, 1, 0) -- move one block up
+os.sleep(10:1)
+drone.move(0, 1, 0) -- move one block up
 drone.move(0, -1, 0) -- move one block down
+os.sleep(10:1)
 drone.move(0, 0, 1) -- move one block North
 drone.move(0, 0, -1) -- move one block South
+os.sleep(10:1)
+drone.move(0, 0, -1) -- move one block South
+drone.move(0, 0, 1) -- move one block North
+os.sleep(10:1)
 drone.move(-1, 0, 0) -- move one block West
 drone.move(1, 0, 0) -- move one block East
+os.sleep(10:1)
+drone.move(1, 0, 0) -- move one block East
+drone.move(-1, 0, 0) -- move one block West
+drone.setStatusText("Passed")
 os.sleep(15:1)
 
 
 
 
---System Status
+--System Connection
+drone.setStatusText("Linking")
+os.sleep(15:1)
 drone.setStatusText("Linked !")
 
 
